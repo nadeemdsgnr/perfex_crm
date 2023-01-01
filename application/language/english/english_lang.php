@@ -3857,3 +3857,9 @@ $lang['staff_related_ticket_notification_to_assignee_only_help'] = 'If this opti
 $lang['import_expenses'] = 'Import Expenses';
 $lang['show_pdf_signature_proposal'] = 'Show PDF Signature on Proposal';
 $lang['enable_honeypot_spam_validation'] = 'Enable Honeypot spam validation';
+
+
+
+$lang['team_members'] = 'TEAM MEMBERS';
+$lang['push_notifications'] = 'push notifications';
+$lang['client_name'] = 'Name';

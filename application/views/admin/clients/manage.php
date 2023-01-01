@@ -43,8 +43,8 @@
                      <a href="<?php echo admin_url('clients/import'); ?>" class="btn btn-info pull-left display-block mright5 hidden-xs">
                      <?php echo _l('import_customers'); ?></a>
                      <?php } ?>
-                     <a href="<?php echo admin_url('clients/all_contacts'); ?>" class="btn btn-info pull-left display-block mright5">
-                     <?php echo _l('customer_contacts'); ?></a>
+                     <!-- <a href="<?php echo admin_url('clients/all_contacts'); ?>" class="btn btn-info pull-left display-block mright5"> -->
+                     <!-- <?php echo _l('customer_contacts'); ?></a> -->
                      <div class="visible-xs">
                         <div class="clearfix"></div>
                      </div>
@@ -193,27 +193,27 @@
                      <div class="col-md-12">
                         <h4 class="no-margin"><?php echo _l('customers_summary'); ?></h4>
                      </div>
-                     <div class="col-md-2 col-xs-6 border-right">
+                     <div class="col-md-4 col-xs-6 border-right">
                         <h3 class="bold"><?php echo total_rows(db_prefix().'clients',($where_summary != '' ? substr($where_summary,5) : '')); ?></h3>
                         <span class="text-dark"><?php echo _l('customers_summary_total'); ?></span>
                      </div>
-                     <div class="col-md-2 col-xs-6 border-right">
+                     <div class="col-md-4 col-xs-6 border-right">
                         <h3 class="bold"><?php echo total_rows(db_prefix().'clients','active=1'.$where_summary); ?></h3>
                         <span class="text-success"><?php echo _l('active_customers'); ?></span>
                      </div>
-                     <div class="col-md-2 col-xs-6 border-right">
+                     <div class="col-md-4 col-xs-6 border-right">
                         <h3 class="bold"><?php echo total_rows(db_prefix().'clients','active=0'.$where_summary); ?></h3>
                         <span class="text-danger"><?php echo _l('inactive_active_customers'); ?></span>
                      </div>
-                     <div class="col-md-2 col-xs-6 border-right">
+                     <!-- <div class="col-md-2 col-xs-6 border-right">
                         <h3 class="bold"><?php echo total_rows(db_prefix().'contacts','active=1'.$where_summary); ?></h3>
                         <span class="text-info"><?php echo _l('customers_summary_active'); ?></span>
                      </div>
                      <div class="col-md-2  col-xs-6 border-right">
                         <h3 class="bold"><?php echo total_rows(db_prefix().'contacts','active=0'.$where_summary); ?></h3>
                         <span class="text-danger"><?php echo _l('customers_summary_inactive'); ?></span>
-                     </div>
-                     <div class="col-md-2 col-xs-6">
+                     </div> -->
+                     <!-- <div class="col-md-2 col-xs-6">
                         <h3 class="bold"><?php echo total_rows(db_prefix().'contacts','last_login LIKE "'.date('Y-m-d').'%"'.$where_summary); ?></h3>
                         <span class="text-muted">
                         <?php
@@ -230,7 +230,7 @@
                         <?php } ?>
                         <span<?php if($contactsTemplate != ''){ ?> class="pointer text-has-action" data-toggle="popover" data-title="<?php echo _l('customers_summary_logged_in_today'); ?>" data-html="true" data-content="<?php echo $contactsTemplate; ?>" data-placement="bottom" <?php } ?>><?php echo _l('customers_summary_logged_in_today'); ?></span>
                         </span>
-                     </div>
+                     </div> -->
                   </div>
                   <?php } ?>
                   <hr class="hr-panel-heading" />
@@ -299,7 +299,7 @@
                          'th_attrs'=>array('class'=>'toggleable', 'id'=>'th-active')
                         ),
                         array(
-                         'name'=>_l('customer_groups'),
+                         'name'=>_l(''),
                          'th_attrs'=>array('class'=>'toggleable', 'id'=>'th-groups')
                         ),
                         array(

@@ -330,6 +330,24 @@ function app_init_admin_sidebar_menu_items()
             'position' => 30,
             'badge'    => [],
         ]);
+
+         //custom
+
+         $CI->app_menu->add_sidebar_menu_item('push_notifications', [
+            'name'     => _l('push_notifications'),
+            'href'     => admin_url('push_notifications'),
+            'icon'     => 'fa fa-tty',
+            'position' => 47,
+            'badge'    => [],
+        ]);
+         $CI->app_menu->add_sidebar_menu_item('team_members', [
+            'name'     => _l('team_members'),
+            'href'     => admin_url('team_members'),
+            'icon'     => 'fa fa-tty',
+            'position' => 48,
+            'badge'    => [],
+        ]);
+    
     }
 
     // Setup menu
